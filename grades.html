@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΕΛΟΠΟΝΝΗΣΟΥ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            word-wrap: break-word; /* Allow text to wrap */
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        th:nth-child(1), td:nth-child(1) {
+            width: 35%; /* Adjust width for subject name */
+        }
+        th:nth-child(2), td:nth-child(2) {
+            width: 25%; /* Adjust width for subject ID */
+        }
+        th:nth-child(3), td:nth-child(3) {
+            width: 20%; /* Adjust width for semester */
+        }
+        th:nth-child(4), td:nth-child(4) {
+            width: 20%; /* Adjust width for grade */
+        }
+        .semester-title {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .grade-green {
+            color: green; /* Color for grades 5 and above */
+            font-weight: bold; /* Make the text bold */
+        }
+        .grade-red {
+            color: red; /* Color for grades below 5 */
+            font-weight: bold; /* Make the text bold */
+        }
+        .grade-gray {
+            color: gray; /* Color for '-' */
+            font-weight: bold; /* Make the text bold */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Βαθμολογίες</div>
+
+        <!-- Semester 1 Table -->
+        <div class="semester-title">Εξάμηνο 1</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Μάθημα</th>
+                    <th>Κωδικός Μαθήματος</th>
+                    <th>Εξάμηνο</th>
+                    <th>Βαθμός</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Φυσική</td>
+                    <td>ECE_K130</td>
+                    <td>Χειμερινό</td>
+                    <td class="grade-red">3</td>
+                </tr>
+                <tr>
+                    <td>Ηλεκτρικά Κυκλώματα Ι</td>
+                    <td>ECE_K160</td>
+                    <td>Χειμερινό</td>
+                    <td class="grade-green">5</td>
+                </tr>
+                <tr>
+                    <td>Ψηφιακή Λογική Σχεδίαση</td>
+                    <td>ECE_K140</td>
+                    <td>Χειμερινό</td>
+                    <td class="grade-red">4</td>
+                </tr>
+                <tr>
+                    <td>Μαθηματικός Λογισμός</td>
+                    <td>ECE_K110</td>
+                    <td>Χειμερινό</td>
+                    <td class="grade-green">5</td>
+                </tr>
+                <tr>
+                    <td>Γραμμική Άλγεβρα</td>
+                    <td>ECE_K120</td>
+                    <td>Χειμερινό</td>
+                    <td class="grade-green">5.5</td>
+                </tr>
+                <tr>
+                    <td>Τεχνικές Προγραμματισμού Υπολογιστών</td>
+                    <td>ECE_K150</td>
+                    <td>Χειμερινό</td>
+                    <td class="grade-green">7.5</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Semester 2 Table -->
+        <div class="semester-title">Εξάμηνο 2</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Μάθημα</th>
+                    <th>Κωδικός Μαθήματος</th>
+                    <th>Εξάμηνο</th>
+                    <th>Βαθμός</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Μαθηματικός Λογισμός ΙΙ</td>
+                    <td>ECE_K210</td>
+                    <td>Εαρινό</td>
+                    <td class="grade-green">5</td>
+                </tr>
+                <tr>
+                    <td>Διαφορικές Εξισώσεις</td>
+                    <td>ECE_K220</td>
+                    <td>Εαρινό</td>
+                    <td class="grade-green">5</td>
+                </tr>
+                <tr>
+                    <td>Ηλεκτρικά Κυκλώματα ΙΙ</td>
+                    <td>ECE_K230</td>
+                    <td>Εαρινό</td>
+                    <td class="grade-red">2</td>
+                </tr>
+                <tr>
+                    <td>Εισαγωγή στις Βάσεις Δεδομένων</td>
+                    <td>ECE_K240</td>
+                    <td>Εαρινό</td>
+                    <td class="grade-green">6</td>
+                </tr>
+                <tr>
+                    <td>Ηλεκτροτεχνικά Υλικά</td>
+                    <td>ECE_K250</td>
+                    <td>Εαρινό</td>
+                    <td class="grade-red">3</td>
+                </tr>
+                <tr>
+                    <td>Διαδικασιακός Προγραμματισμός</td>
+                    <td>ECE_K260</td>
+                    <td>Εαρινό</td>
+                    <td class="grade-green">7</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Semester 3 Table -->
+        <div class="semester-title">Εξάμηνο 3</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Μάθημα</th>
+                    <th>Κωδικός Μαθήματος</th>
+                    <th>Εξάμηνο</th>
+                    <th>Βαθμός</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Πιθανοθεωρία και Στατιστική</td>
+                    <td>ECE_K310</td>
+                    <td>Χειμερινό</td>
+                    <td class="grade-green">5</td>
+                </tr>
+                <tr>
+                    <td>Σήματα και Συστήματα</td>
+                    <td>ECE_K320</td>
+                    <td>Χειμερινό</td>
+                    <td class="grade-gray">-</td>
+                </tr>
+                <tr>
+                    <td>Δομές Δεδομένων και Αλγόριθμοι</td>
+                    <td>ECE_K330</td>
+                    <td>Χειμερινό</td>
+                    <td class="grade-gray">-</td>
+                </tr>
+                <tr>
+                    <td>Βασική Ηλεκτρονική</td>
+                    <td>ECE_K340</td>
+                    <td>Χειμερινό</td>
+                    <td class="grade-green">5.5</td>
+                </tr>
+                <tr>
+                    <td>Τεχνολογία Λογισμικού</td>
+                    <td>ECE_K350</td>
+                    <td>Χειμερινό</td>
+                    <td class="grade-green">5</td>
+                </tr>
+                <tr>
+                    <td>Ηλεκτρομαγνητισμός</td>
+                    <td>ECE_K360</td>
+                    <td>Χειμερινό</td>
+                    <td class="grade-gray">-</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Semester 4 Table -->
+        <div class="semester-title">Εξάμηνο 4</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Μάθημα</th>
+                    <th>Κωδικός Μαθήματος</th>
+                    <th>Εξάμηνο</th>
+                    <th>Βαθμός</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Αρχιτεκτονική Υπολογιστών</td>
+                    <td>ECE_K410</td>
+                    <td>Εαρινό</td>
+                    <td class="grade-red">3</td>
+                </tr>
+                <tr>
+                    <td>Αρχές Τηλεπικοινωνιακών Συστημάτων</td>
+                    <td>ECE_K420</td>
+                    <td>Εαρινό</td>
+                    <td class="grade-green">6</td>
+                </tr>
+                <tr>
+                    <td>Αντικειμενοστραφής Σχεδίαση και Προγραμματισμός</td>
+                    <td>ECE_K430</td>
+                    <td>Εαρινό</td>
+                    <td class="grade-green">5</td>
+                </tr>
+                <tr>
+                    <td>Αναλογικά Ηλεκτρονικά Κυκλώματα</td>
+                    <td>ECE_K440</td>
+                    <td>Εαρινό</td>
+                    <td class="grade-red">3</td>
+                </tr>
+                <tr>
+                    <td>Ψηφιακά Κυκλώματα και Συστήματα</td>
+                    <td>ECE_K450</td>
+                    <td>Εαρινό</td>
+                    <td class="grade-green">5</td>
+                </tr>
+                <tr>
+                    <td>Ηλεκτρικές Μηχανές Ι</td>
+                    <td>ECE_K460</td>
+                    <td>Εαρινό</td>
+                    <td class="grade-red">2.5</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

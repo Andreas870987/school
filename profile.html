@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΕΛΟΠΟΝΝΗΣΟΥ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 60%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 18px; /* Adjust font size */
+        }
+        .row label {
+            font-weight: bold;
+            width: 45%; /* Adjust width for better spacing */
+        }
+.row span {
+    width: 60%; 
+    word-wrap: break-word; 
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Προφίλ Φοιτητή</div>
+
+        <div class="row">
+            <label>Όνομα:</label>
+            <span id="firstName">...</span>
+        </div>
+        <div class="row">
+            <label>Επώνυμο:</label>
+            <span id="lastName">...</span>
+        </div>
+        <div class="row">
+            <label>ΑΜΚΑ:</label>
+            <span id="amka">...</span>
+        </div>
+        <div class="row">
+            <label>Τμήμα:</label>
+            <span id="department">...</span>
+        </div>
+        <div class="row">
+            <label>Όνομα Χρήστη:</label>
+            <span id="username">...</span>
+        </div>
+        <div class="row">
+            <label>Email:</label>
+            <span id="email">...</span>
+        </div>
+        <div class="row">
+            <label>Κινητό Τηλέφωνο:</label>
+            <span id="phoneNumber">...</span>
+        </div>
+        <div class="row">
+            <label>Έτος Εισαγωγής:</label>
+            <span id="admissionYear">...</span>
+        </div>
+
+        <div class="row">
+            <label>Τρέχον Εξάμηνο:</label>
+            <span id="currentSemester">...</span>
+        </div>
+    </div>
+
+    <script>
+        // Placeholder data - You can fill this with actual student info later
+        const studentProfile = {
+            currentSemester: "5ο",
+            firstName: "ΑΝΔΡΕΑΣ",
+            lastName: "ΛΙΑΓΚΟΣ",
+            username: "ece22076",
+            email: "andreasliagos19@gmail.com",
+            amka: "19110401296",
+            phoneNumber: "6945700165",
+            department: "ΤΜΗΜΑ ΗΛΕΚΤΡΟΛΟΓΩΝ ΜΗΧΑΝΙΚΩΝ ΚΑΙ ΜΗΧΑΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ",
+            admissionYear: "2022"
+        };
+
+        // Populate the page with data
+        document.getElementById("currentSemester").textContent = studentProfile.currentSemester;
+        document.getElementById("firstName").textContent = studentProfile.firstName;
+        document.getElementById("lastName").textContent = studentProfile.lastName;
+        document.getElementById("username").textContent = studentProfile.username;
+        document.getElementById("email").textContent = studentProfile.email;
+        document.getElementById("amka").textContent = studentProfile.amka;
+        document.getElementById("phoneNumber").textContent = studentProfile.phoneNumber;
+        document.getElementById("department").textContent = studentProfile.department;
+        document.getElementById("admissionYear").textContent = studentProfile.admissionYear;
+    </script>
+</body>
+</html>

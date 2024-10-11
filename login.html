@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΕΛΟΠΟΝΝΗΣΟΥ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 80%;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΕΛΟΠΟΝΝΗΣΟΥ</div>
+        <div class="subtitle">Συνδέσου τώρα με τον ιδρυματικό σου λογαριασμό</div>
+        <form onsubmit="return login();">
+            <input type="text" id="username" placeholder="Όνομα χρήστη" required>
+            <input type="password" id="password" placeholder="Κωδικός πρόσβασης" required>
+            <button type="submit">Σύνδεση</button>
+        </form>
+    </div>
+    <script>
+        function login() {
+            // Here you can add your logic to verify username and password
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Example hardcoded credentials
+            if (username === 'ece22076' && password === 'Andreas2004') {
+                // Redirect to the main page on successful login
+                window.location.href = 'main.html';
+            } else {
+                alert('Λάθος όνομα χρήστη ή κωδικός πρόσβασης');
+            }
+            return false; // Prevent form submission
+        }
+    </script>
+</body>
+</html>

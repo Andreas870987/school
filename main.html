@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΕΛΟΠΟΝΝΗΣΟΥ</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #fff; margin: 0; padding: 0; }
+        .header {
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: right;
+        }
+        .header button {
+            padding: 10px 15px;
+            margin-left: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .header button:hover {
+            background-color: #0056b3;
+        }
+        .content {
+            margin: 50px;
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <button onclick="location.href='profile.html?username=' + username">Προφίλ</button>
+        <button onclick="location.href='grades.html?username=' + username">Βαθμολογία</button>
+        <button onclick="alert('Η σελίδα εξυπηρέτησης δεν είναι διαθέσιμη ακόμα')">Εξυπηρέτηση</button>
+    </div>
+
+    <div class="content">
+        <p>ΚΑΛΩΣ ΗΡΘΑΤΕ ece22076!</p>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const username = params.get("username");
+    </script>
+</body>
+</html>
