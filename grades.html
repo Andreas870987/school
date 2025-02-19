@@ -63,6 +63,26 @@
             color: gray; /* Color for '-' */
             font-weight: bold; /* Make the text bold */
         }
+        /* Styling for the additional table */
+        .summary-table {
+            margin-top: 40px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .summary-table th, .summary-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .summary-table th {
+            background-color: #f2f2f2;
+        }
+        .passed {
+            color: green;
+        }
+        .due {
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -85,7 +105,7 @@
                     <td>Φυσική</td>
                     <td>ECE_K130</td>
                     <td>Χειμερινό</td>
-                    <td class="grade-red">3</td>
+                    <td class="grade-red">4</td>
                 </tr>
                 <tr>
                     <td>Ηλεκτρικά Κυκλώματα Ι</td>
@@ -97,7 +117,7 @@
                     <td>Ψηφιακή Λογική Σχεδίαση</td>
                     <td>ECE_K140</td>
                     <td>Χειμερινό</td>
-                    <td class="grade-red">4</td>
+                    <td class="grade-red"> </td>
                 </tr>
                 <tr>
                     <td>Μαθηματικός Λογισμός</td>
@@ -193,19 +213,19 @@
                     <td>Σήματα και Συστήματα</td>
                     <td>ECE_K320</td>
                     <td>Χειμερινό</td>
-                    <td class="grade-gray">-</td>
+                    <td class="grade-gray"> </td>
                 </tr>
                 <tr>
                     <td>Δομές Δεδομένων και Αλγόριθμοι</td>
                     <td>ECE_K330</td>
                     <td>Χειμερινό</td>
-                    <td class="grade-gray">-</td>
+                    <td class="grade-gray"> </td>
                 </tr>
                 <tr>
                     <td>Βασική Ηλεκτρονική</td>
                     <td>ECE_K340</td>
                     <td>Χειμερινό</td>
-                    <td class="grade-green">5.5</td>
+                    <td class="grade-red">3</td>
                 </tr>
                 <tr>
                     <td>Τεχνολογία Λογισμικού</td>
@@ -217,7 +237,7 @@
                     <td>Ηλεκτρομαγνητισμός</td>
                     <td>ECE_K360</td>
                     <td>Χειμερινό</td>
-                    <td class="grade-red">3*</td>
+                    <td class="grade-red">3</td>
                 </tr>
             </tbody>
         </table>
@@ -235,92 +255,72 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Αρχιτεκτονική Υπολογιστών</td>
+                    <td>Επικοινωνίες Δεδομένων</td>
                     <td>ECE_K410</td>
-                    <td>Εαρινό</td>
-                    <td class="grade-red">3</td>
-                </tr>
-                <tr>
-                    <td>Αρχές Τηλεπικοινωνιακών Συστημάτων</td>
-                    <td>ECE_K420</td>
                     <td>Εαρινό</td>
                     <td class="grade-green">6</td>
                 </tr>
                 <tr>
-                    <td>Αντικειμενοστραφής Σχεδίαση και Προγραμματισμός</td>
+                    <td>Αναλογικά Σήματα και Συστήματα</td>
+                    <td>ECE_K420</td>
+                    <td>Εαρινό</td>
+                    <td class="grade-gray"> </td>
+                </tr>
+                <tr>
+                    <td>Βασική Κρυπτογραφία</td>
                     <td>ECE_K430</td>
                     <td>Εαρινό</td>
-                    <td class="grade-green">5</td>
+                    <td class="grade-green">6</td>
                 </tr>
                 <tr>
-                    <td>Αναλογικά Ηλεκτρονικά Κυκλώματα</td>
+                    <td>Συστήματα Ελέγχου</td>
                     <td>ECE_K440</td>
                     <td>Εαρινό</td>
-                    <td class="grade-red">3</td>
+                    <td class="grade-gray"> </td>
                 </tr>
                 <tr>
-                    <td>Ψηφιακά Κυκλώματα και Συστήματα</td>
+                    <td>Αρχές Σχεδίασης Ηλεκτρονικών Κυκλωμάτων</td>
                     <td>ECE_K450</td>
                     <td>Εαρινό</td>
-                    <td class="grade-green">5</td>
+                    <td class="grade-red">4</td>
                 </tr>
                 <tr>
-                    <td>Ηλεκτρικές Μηχανές Ι</td>
+                    <td>Εφαρμοσμένος Προγραμματισμός</td>
                     <td>ECE_K460</td>
                     <td>Εαρινό</td>
-                    <td class="grade-red">2.5</td>
+                    <td class="grade-green">5</td>
                 </tr>
             </tbody>
         </table>
-        <div class="semester-title">Εξάμηνο 5 </div>
-<table>
-    <thead>
-        <tr>
-            <th>Μάθημα</th>
-            <th>Κωδικός Μαθήματος</th>
-            <th>Εξάμηνο</th>
-            <th>Βαθμός</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Λειτουργικά Συστήματα</td>
-            <td>ECE_K510</td>
-            <td>Χειμερινό</td>
-            <td class="grade-green"> 7* </td>
-        </tr>
-        <tr>
-            <td>Δίκτυα Υπολογιστών</td>
-            <td>ECE_K520</td>
-            <td>Χειμερινό</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Ψηφιακές Επικοινωνίες</td>
-            <td>ECE_K530</td>
-            <td>Χειμερινό</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Εισαγωγή στα ΣΗΕ</td>
-            <td>ECE_K540</td>
-            <td>Χειμερινό</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Συστήματα Αυτόματου Ελέγχου</td>
-            <td>ECE_K550</td>
-            <td>Χειμερινό</td>
-            <td class="grade-gray">-</td>
-        </tr>
-        <tr>
-            <td>Συστήματα Μέτρησης και Αισθητήρων</td>
-            <td>ECE_K560</td>
-            <td>Χειμερινό</td>
-            <td class="grade-gray">-</td>
-        </tr>
-    </tbody>
-</table>
+
+        <!-- New Table with Categories -->
+        <div class="semester-title">Ακαδημαϊκή Πρόοδος</div>
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th>Κατηγορία</th>
+                    <th>Αριθμός Μαθημάτων</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Συνολο Δηλωμένων Μαθημάτων</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>Περασμένα Μαθήματα</td>
+                    <td class="passed">14</td>
+                </tr>
+                <tr>
+                    <td>Χρωστούμενα Μαθήματα</td>
+                    <td class="due">6</td>
+                </tr>
+                <tr>
+                    <td>Σε Αναμονή</td>
+                    <td>8</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
